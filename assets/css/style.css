@@ -43,6 +43,40 @@
     font-size: 22px;
   }
   
+section {
+    padding: 60px;
+}
+
+    .hero-form {
+        border: 3px solid #024e76;
+        background-color: #fce138;
+        padding: 20px;
+        width: 500px;
+        color: #024e76;
+        position: absolute;
+        bottom: 120px;
+        right: 140px;
+
+    }
+    .hero-form h3 {
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    .hero-form p {
+        margin: 5px 0 15px 0;
+    }
+
+    /* Hero Style Start */
+    .hero {
+        background-image: url(/Users/kpbader/Desktop/projects/run-buddy/assets/images/hero-bg.jpeg);
+        height: 600px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        }
+    /* Hero Style End */
+
   footer {
     background: #fce138;
     width: 100%;
