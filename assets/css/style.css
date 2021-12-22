@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
-}
-
 body {
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
@@ -41,7 +36,7 @@ header nav {
   margin: 7px 0;
 }
 
-header nav ul li {
+header nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -61,16 +56,15 @@ header nav ul li a {
 
 /* FOOTER STYLES START */
 footer {
+  background: #fce138;
+  padding: 40px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: #fce138;
-  padding: 40px 35px;
   width: 100%;
 }
 
 footer h2 {
-  
   color: #024e76;
   font-size: 30px;
   margin: 0;
@@ -105,7 +99,7 @@ section {
   width: 35%;
   text-align: right;
   margin: 3.5%;
-  color: #ffff;
+  color: #fff;
   font-size: 18px;
   line-height: 1.3;
 }
@@ -160,12 +154,12 @@ section {
 /* SECTION TITLE STYLES START */
 .section-title {
   font-size: 55px;
+  border-bottom: 3px solid;
+  color: #024e76;
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
   width: 50%;
-  border-bottom: 3px solid;
-  color: #024e76;
 }
 
 .primary-border {
@@ -178,7 +172,6 @@ section {
 /* SECTION TITLE STYLES END */
 
 /* WHAT WE DO STYLES */
-
 
 .intro p {
   line-height: 1.7;
@@ -193,11 +186,8 @@ section {
 
 /* WHAT YOU DO STYLES START */
 .steps { 
-  
   background: #fce138;
 }
-
-
 
 .step {
   margin: 50px auto;
@@ -217,6 +207,7 @@ section {
 }
 
 .step-info {
+  flex: 2 70%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -236,8 +227,7 @@ section {
 }
 
 .step-text p {
-  color: #024e76;
-  line-height: 1.5;
+  color: #39a6b2;
   font-size: 18px;
 }
 
@@ -253,18 +243,16 @@ section {
 .trainers {
   width: 100%;
   margin: 0 auto;
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
 .trainer {
- 
   margin: 20px;
   flex: 1;
   background: #024e76;
   color: #fce138;
-  
 }
 
 .trainer img {
@@ -278,7 +266,6 @@ section {
 
 .trainer-bio h3 {
   font-size: 28px;
-  
 }
 
 .trainer-bio h4 {
@@ -307,8 +294,13 @@ section {
   flex-wrap: wrap;
 }
 
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
 .contact-info iframe {
-height: 400px;
+  height: 400px;
 }
 
 .contact-info div {
@@ -327,25 +319,10 @@ height: 400px;
   font-style: normal;
 }
 
-.contact-info a {
-  color: #fce138;
-}
-
-.contact-form input {
+.contact-form input, .contact-form textarea {
   border: 1px solid #024e76;
   display: block;
-  padding: 7px 15px; 
-  font-size: 16px;
-  color: #024e76;
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-}
-
-.contact-form textarea {
-  border: 1px solid #024e76;
-  display: block;
-  padding: 7px 15px; 
+  padding: 7px 15px;
   font-size: 16px;
   color: #024e76;
   width: 100%;
@@ -363,18 +340,22 @@ height: 400px;
   font-size: 16px;
 }
 
+.contact-info a {
+  color: #fce138;
+}
+
+
 /* REACH OUT STYLES END */
 
 /* UTILITIES */
-
-.flex-row {
-  display: flex;
-}
-
 .text-left {
   text-align: left;
 }
 
 .text-right {
   text-align: right;
+}
+
+.flex-row {
+  display: flex;
 }
